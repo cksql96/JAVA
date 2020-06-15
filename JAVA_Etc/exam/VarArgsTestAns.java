@@ -1,0 +1,22 @@
+package exam;
+
+public class VarArgsTestAns {
+	static void foo(String str, int... a){
+		System.out.print(str + " ");
+		for(int i : a) 
+			System.out.print(i + " ");
+		System.out.println();
+	}
+	
+	public static void main(String args[] ){
+	
+		foo("æ»≥Á", 1);
+		foo("æ»≥Á«œººø‰", 1, 2);
+		foo("¿ﬂ ¿÷æÓ");
+		
+	}
+					 
+	
+	
+}
+

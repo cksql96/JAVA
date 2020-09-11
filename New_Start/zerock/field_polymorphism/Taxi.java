@@ -1,0 +1,17 @@
+package com.zerock.field_polymorphism;
+
+import lombok.NoArgsConstructor;
+import lombok.extern.log4j.Log4j;
+
+
+@Log4j
+@NoArgsConstructor(access=lombok.AccessLevel.PUBLIC)
+public class Taxi implements Vehicle{
+
+	
+	@Override
+	public void run() {
+		log.info("택시가 달립니다.");
+	}	//run
+	
+}	//end class
